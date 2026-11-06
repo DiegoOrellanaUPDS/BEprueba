@@ -12,7 +12,12 @@ builder.Services.AddDbContext<DBContext>(options =>
 
 builder.Services.AddOpenApi();
 builder.Services.AddControllers();
+<<<<<<< HEAD
+=======
+
+>>>>>>> H15
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -42,6 +47,7 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast");
 
+app.MapControllers();
 app.Run();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
