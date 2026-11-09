@@ -12,10 +12,7 @@ builder.Services.AddDbContext<DBContext>(options =>
 
 builder.Services.AddOpenApi();
 builder.Services.AddControllers();
-<<<<<<< HEAD
-=======
 
->>>>>>> H15
 var app = builder.Build();
 
 
